@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ile Web Dev</title>
+    <link rel="icon" type="image/png" href="./img/favicon-32x32.png" sizes="32x32" />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Crimson+Pro:wght@200&family=Encode+Sans:wght@500&family=IBM+Plex+Mono:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"> 
+    <link rel="stylesheet" type="text/css" href="./css/style.production.css">
+</head>
+<body>
+    <header class="page-header">
+        <a class="page-header_item" href="./index.html"><img class="main-logo" src="./img/logo5.png" alt="logo" width="350"></a>
+        <nav class="page-header_item">
+            <ul role="menubar" class="navigation-list page-header_item">
+                <li role="presentation"><a href="index.html" role="menuitem" class="navigation-list_item navigation-list_item--active page-header_item">Home</a></li>
+                <li role="presentation"><a href="./projects.html" role="menuitem" class="navigation-list_item page-header_item">Projects</a></li>
+                <li role="presentation"><a href="./about.html" role="menuitem" class="navigation-list__item page-header_item">About Me</a></li>
+                <li role="presentation"><a href="./contact.html" role="menuitem" class="navigation-list__item page-header_item">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1 class="h1-contact">Contact</h1>
+    <div class="contact-body">
+        <div class="contact-info">
+            <div class="contact-p">
+                ile Web Dev<br>
+                8996 Light St. <br>
+                10179 Baltimore<br>
+                USA<br>
+                <br>
+                <a href="tel:1234567890">Tel: +1 (123) 456-7890</a><br>
+                <a href="skype:lekolawole">Skype: lekolawole</a><br>
+                <a href="mailto:lekolawole@gmail.com">lekolawole@gmail.com</a>
+            </div>
+            <h2 class="h2-contact"><a href="mailto:lekolawole@gmail.com">Get in Touch</a></h2>
+        </div>
+        <form action="" method="post" id="contact-form">
+            <div>
+                <label class="standard-label" for="first-name">Name:</label>
+                    <input type="name" id="first-name" required placeholder="First Name">
+            </div>
+            <div>
+                <label class="standard-label" for="contact-email">Email: </label>
+                    <input type="email" id="contact-email" required>
+            </div>
+            <div>
+                <label class="standard-label" for="contact-tel">Phone:</label>
+                    <input type="tel" id="contact-tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}">
+            </div>
+            <div>
+                <label class="standard-label" for="message"></label>
+                <textarea maxlength="240" id="message" required placeholder="Type your message here..."></textarea>
+                    <input type="submit" value="Send Message" class="secondary_contact_submit">
+            </div>
+        </form>
+    </div>
+    <footer>
+        <p class="find-me">Find me on</p>
+        <a href="https://www.instagram.com/ladekolawole" target="_blank"><img src="./img/ig2.svg" alt="Instagram" width="50"></a>
+        <a href="https://www.linkedin.com/in/ladek" target="_blank"><img src="./img/li.svg" alt="Linkedin" width="55"></a>
+        <a href="https://www.youtube.com/channel/UCjK4bFOCjYBi0_mQUluoEbQ" target="_blank"><img src="./img/youtube.svg" alt="YouTube" width="50"></a>
+    </footer>
+<!-- Tell me whyyyyy-->
+<script src="./js/tota11y.min.js"></script>
+</body>
+</html>
