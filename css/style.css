@@ -70,18 +70,17 @@ li {
 
 .portrait-left {
     display: flex;
-    border-radius: 70%;
+    border-radius: 10%;
 }
 
 .intro {
-    margin: 14rem 20% 10% 20%;
+    margin: 8rem 20% 10% 25%;
     display: flex;
-    border: px solid black;
 }
+
 .hello-statement {
     margin-left: 2rem;
     display: inline-block;
-    border: px solid red;
 }
 
 button, .button {
