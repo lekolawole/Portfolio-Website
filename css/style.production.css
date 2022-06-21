@@ -93,7 +93,7 @@ li {
 }
 
 .intro {
-    margin: 14rem 20% 10% 20%;
+    margin: 8rem 20% 10% 25%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -123,12 +123,18 @@ button {
     transition-property: opacity;
 }
 
+.btn-text {
+    color: #fff;
+}
+.btn-text:hover, .btn-text:visited {
+    background-color: #357b70;
+}
+
 .button {
     font-size: 16px;
     font-family: inherit;
     border: none;
     background-color: #357b70;
-    color: #fff;
     padding: 10px;
     margin: 10px 10px 5px 10px;
     border-bottom: 2px solid rgba(0, 0, 0, 0.3);
@@ -272,7 +278,7 @@ span {
     -ms-grid-row: 1;
         grid-row-start: 1;
     -ms-grid-row-span: 2;
-    grid-row-end: 3;
+    /* grid-row-end: 3; */
     border-bottom: 5px solid #357b70;
     border-right: 5px solid #357b70;
     border-top: 5px solid #357b70;
@@ -302,6 +308,7 @@ section:focus {
     text-decoration: underline;
     color: #357b70;
 }
+
 
 /*///////////////ABOUT ME PAGE///////////////////////////*/
 .about-main {
@@ -433,17 +440,17 @@ circle {
 }
 
 textarea {
-	height: 4rem;
+	height: 10rem;
 	padding: 1rem;
-	width: 17rem;
-    border: 2px solid #357b70;
+	width: 20rem;
+    /* border: 2px solid #357b70; */
     border-radius: 10px;
-    margin-left: 8%;
+    /* margin-left: 13%; */
 }
 
 .contact-info {
     padding: none;
-    border: px solid #000;
+    /* border: px solid #000; */
     display: inline-block;
     text-align: center;
     line-height: 25px;
@@ -470,10 +477,10 @@ label {
 }
 
 input {
-	border: 2px solid ;
+	border: 1px solid ;
     border-radius: 10px;
     display: inline-block;
-    border: 2px solid #357b70;
+    /* border: 2px solid #357b70; */
     padding: 5px;
 }
 
