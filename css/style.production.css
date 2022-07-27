@@ -39,7 +39,7 @@ header {
 	-webkit-box-orient: horizontal;
 	-webkit-box-direction: normal;
 	    -ms-flex-flow: row nowrap;
-	        flex-flow: row nowrap;
+	        flex-flow: row wrap;
 }
 
 p {
@@ -183,13 +183,13 @@ span {
 .page-header_item:last-child {
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
-            flex-grow: 1;
+            /* flex-grow: 1; */
     text-align: right;
 }
 
-section {
+/* section {
     padding: 6rem;
-}
+} */
 .section-label {
     background-color: #fff;
     border-radius: 2rem;
@@ -203,7 +203,7 @@ section {
 }
 .parallax {
     background-image: url("https://images.pexels.com/photos/4705853/pexels-photo-4705853.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
-
+    padding: 6rem;
     /* Full height */
     height: 100%;
 
@@ -466,21 +466,15 @@ textarea {
 	height: 10rem;
 	padding: 1rem;
 	width: 20rem;
-    /* border: 2px solid #357b70; */
     border-radius: 10px;
-    /* margin-left: 13%; */
 }
 
 .contact-info {
     padding: none;
-    /* border: px solid #000; */
     display: inline-block;
     text-align: center;
     line-height: 25px;
     margin: 2% 10% 0 15%;
-    /*margin: 7px 20.5% 0 26.5%;*/
-    /*margin: auto 24.6%;*/
-    /*margin: 2% 8% 0 25%;*/
 }
 .contact-info a:hover {
     background-color: #ffbc59;
@@ -519,8 +513,6 @@ input {
 
 
 form {
-    /*margin: auto 24.6%;*/
-    /*margin: 2% 27% 5% 20%;*/
     display: inline-block;
     padding: none;
     margin: 2% 10% 0 6%;
@@ -636,5 +628,9 @@ form {
     }
     svg {
         width: 80mm;
+    }
+    .navigation-list .page-header_item:last-child {
+        font-size: 12px;
+        text-align: left;
     }
 }
