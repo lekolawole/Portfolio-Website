@@ -29,6 +29,7 @@
 
 body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    height: 100%;
 }
 
 header {
@@ -64,10 +65,11 @@ a {
     text-decoration: none;
 }
 nav a:hover {
-    background-color: #ffbc59;
+    background-color: #dfd5c5;
+    border-radius: 2rem;
 }
 a:focus {
-    background-color: #ffbc59;
+    background-color: #dfd5c5;
 }
 nav a:visited {
     color: #000;
@@ -97,24 +99,22 @@ li {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    border: px solid;
 }
 .hello-statement {
     margin-left: 2rem;
     display: inline-block;
-    border: px solid;
 }
 
 button {
     font-size: 16px;
     font-family: inherit;
     border: none;
-    background-color: #357b70;
+    background-color: #dfd5c5;
     color: #fff;
     padding: 10px;
     margin: 10px 10px 5px 10px;
     border-bottom: 2px solid rgba(0, 0, 0, 0.3);
-    border-radius: 7px;
+    border-radius: 2rem;
     -webkit-transition-duration: 0.2s;
          -o-transition-duration: 0.2s;
             transition-duration: 0.2s;
@@ -124,21 +124,21 @@ button {
 }
 
 .btn-text {
-    color: #fff;
+    color: #000;
 }
 .btn-text:hover, .btn-text:visited {
-    background-color: #357b70;
+    background-color: #dfd5c5;
 }
 
 .button {
     font-size: 16px;
     font-family: inherit;
     border: none;
-    background-color: #357b70;
+    background-color: #dfd5c5;
     padding: 10px;
     margin: 10px 10px 5px 10px;
     border-bottom: 2px solid rgba(0, 0, 0, 0.3);
-    border-radius: 7px;
+    border-radius: 2rem;
     -webkit-transition-duration: 0.2s;
          -o-transition-duration: 0.2s;
             transition-duration: 0.2s;
@@ -169,7 +169,8 @@ footer {
 
 span {
     background-color: #223b50;
-    color: rgb(245, 198, 112);
+    border-radius: 2rem;
+    color: #fff;
     font-style: italic;
     font-weight: bold;
 }
@@ -184,6 +185,59 @@ span {
         -ms-flex-positive: 1;
             flex-grow: 1;
     text-align: right;
+}
+
+section {
+    padding: 6rem;
+}
+.section-label {
+    background-color: #fff;
+    border-radius: 2rem;
+}
+.section-label:hover {
+    box-shadow: 5px 5px 5px #2b2b2b;
+}
+.label-container {
+    padding: 2rem;
+    text-align: center;
+}
+.parallax {
+    background-image: url("https://images.pexels.com/photos/4705853/pexels-photo-4705853.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+
+    /* Full height */
+    height: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 1;
+}
+
+.parallax:hover {
+    opacity: 0.5;
+    -webkit-transition-duration: 0.2s;
+         -o-transition-duration: 0.2s;
+            transition-duration: 0.2s;
+    -webkit-transition-property: opacity;
+    -o-transition-property: opacity;
+    transition-property: opacity;
+}
+
+.fadeLeftMini {
+  animation: fadeLeftMini 1.8s;
+  animation-fill-mode: both;
+}
+@keyframes fadeLeftMini {
+  0% {
+    opacity: 0;
+    transform: translate3d(-40%, 0, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateZ(0);
+  }
 }
 /*//////////////////////PROJECTS PAGE//////////////////////////////////*/
 .main {
@@ -325,32 +379,10 @@ svg {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    border: px solid;
 }
 
 .about-statement {
     margin-left: 10%;
-}
-.skills-table {
-    margin: 5rem 30% 0 24%;
-    line-height: 3rem;
-}
-
-table {
-    width: 800px;
-    font-family: 'IBM Plex Mono', monospace;
-}
-
-thead {
-    background-color: #223b50;
-    color: #fff;
-    font-size: 24px;
-}
-
-.table-progress {
-    border: 7px solid #e0b354;
-    border-radius: 30%;
-    display: inline-block;
 }
 
 .portrait-cartoon {
@@ -358,15 +390,6 @@ thead {
 }
 .about-portrait {
     border-radius: 10px;
-}
-.photo-gallery {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin-top: 10%;
-}
-.photo-gallery img {
-    width: 200px;
 }
 
 @-webkit-keyframes sun-change {
@@ -505,7 +528,7 @@ form {
 
 .secondary_contact_submit {
     background-color: #fff;
-    color: #0000ff;
+    color: #223B50;
     font-family: 'Bebas Neue', cursive;
     border: none;
     margin-top: 2%;
@@ -515,19 +538,19 @@ form {
 }
 .secondary_contact_submit:hover {
     background-color: #ffbc59;
-    color: #0000ff;
+    color: #223B50;
     border-radius: 0;
 }
 .secondary_contact_submit:focus {
     background-color: #ffbc59;
-    color: #0000ff;
+    color: #223B50;
     border-radius: 0;
 }
 .contact-p {
     font-weight: bold;
 }
 .contact-p a {
-    color: #0000ff;
+    color: #223B50;
 }
 
 /*///////////////////// RESPONSIVE DESIGN //////////////////////////*/
@@ -589,26 +612,29 @@ form {
             -ms-flex-direction: column;
                 flex-direction: column;
     }
+    .intro {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+    .contact-body {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
     h1 {
         font-size: 22px;
     }
     .hello-statement {
         display: inline-block;
     }
-    .about-portrait {
+    .about-portrait .portrait-left {
         width: 150px;
         margin: 0 auto;
     }
     svg {
         width: 80mm;
-    }
-    table {
-        width: 300px;
-    }
-    td {
-        font-size: 14px;
-    }
-    .rows-descriptions {
-        font-size: 16px;
     }
 }
