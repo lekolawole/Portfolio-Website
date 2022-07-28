@@ -633,4 +633,10 @@ form {
         font-size: 12px;
         text-align: left;
     }
+    .btn-text {
+        font-size: 10px;
+    }
+    button {
+        font-size: 10px;
+    }
 }
