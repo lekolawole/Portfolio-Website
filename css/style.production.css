@@ -224,6 +224,10 @@ span {
     -o-transition-property: opacity;
     transition-property: opacity;
 }
+.parallax-about {
+    padding-left: 6rem;
+    padding-right: 6rem;
+}
 
 .fadeLeftMini {
   animation: fadeLeftMini 1.8s;
