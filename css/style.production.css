@@ -35,7 +35,7 @@ body {
 header {
 	display: -webkit-box;
 	display: -ms-flexbox;
-	display: flex;
+	/* display: flex; */
 	-webkit-box-orient: horizontal;
 	-webkit-box-direction: normal;
 	    -ms-flex-flow: row nowrap;
@@ -50,6 +50,7 @@ nav {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    justify-content: end;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -57,6 +58,10 @@ nav {
     /*margin: 0 5% 7% 46%;*/
     font-family: 'Bebas Neue', cursive, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
     font-size: 18px;
+}
+
+.main-nav_index {
+    justify-content: end;
 }
 
 a {
@@ -201,6 +206,10 @@ span {
     padding: 2rem;
     text-align: center;
 }
+
+.more-links-hidden {
+    display: none;
+}
 .parallax {
     background-image: url("https://images.pexels.com/photos/4705853/pexels-photo-4705853.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
     padding: 6rem;
@@ -213,8 +222,8 @@ span {
     background-repeat: no-repeat;
     background-size: cover;
     opacity: 1;
+    
 }
-
 .parallax:hover {
     opacity: 0.5;
     -webkit-transition-duration: 0.2s;
@@ -465,46 +474,6 @@ circle {
             justify-content: center;
     margin-bottom: 15%;
 }
-
-textarea {
-	height: 10rem;
-	padding: 1rem;
-	width: 20rem;
-    border-radius: 10px;
-}
-
-.contact-info {
-    padding: none;
-    display: inline-block;
-    text-align: center;
-    line-height: 25px;
-    margin: 2% 10% 0 15%;
-}
-.contact-info a:hover {
-    background-color: #ffbc59;
-}
-a:focus {
-    background-color: #ffbc59;
-}
-.contact-info a:visited {
-    color: #000;
-} 
-
-label {
-	display: inline-block;
-    margin-bottom: 5%;
-    margin-right: 5px;
-    font-weight: bold;
-}
-
-input {
-	border: 1px solid ;
-    border-radius: 10px;
-    display: inline-block;
-    /* border: 2px solid #357b70; */
-    padding: 5px;
-}
-
 .h1-contact {
     text-align: center;
     font-family: 'Bebas Neue', cursive;
@@ -514,40 +483,32 @@ input {
     text-align: center;
     font-family: 'Bebas Neue', cursive;
 }
-
-
-form {
-    display: inline-block;
-    padding: none;
-    margin: 2% 10% 0 6%;
-}
-
-.secondary_contact_submit {
-    background-color: #fff;
-    color: #223B50;
-    font-family: 'Bebas Neue', cursive;
-    border: none;
-    margin-top: 2%;
-    margin-left: 30%;
-    font-size: 24px;
-    font-weight: bold;
-}
-.secondary_contact_submit:hover {
-    background-color: #ffbc59;
-    color: #223B50;
-    border-radius: 0;
-}
-.secondary_contact_submit:focus {
-    background-color: #ffbc59;
-    color: #223B50;
-    border-radius: 0;
-}
 .contact-p {
     font-weight: bold;
 }
 .contact-p a {
     color: #223B50;
 }
+
+.contact-email {
+    font-size: 24px;
+    font-family: 'Bebas Neue', cursive, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    margin-top: 5%;
+}
+.card {
+    margin-bottom: 10%;
+}
+.card-body {
+    margin-top: 2%;
+    margin-bottom: 5%;
+}
+.contact-btn {
+    margin-top: 5%;
+}
+ul {
+    margin-top: 1rem ;
+}
+
 
 /*///////////////////// RESPONSIVE DESIGN //////////////////////////*/
 
@@ -565,6 +526,7 @@ form {
       font-size: 22px;
     }
   }
+  /* Responsive Projects Page */
   @media all and (max-width: 500px) {
     .grid {
         -ms-grid-columns: 1fr;
@@ -601,6 +563,8 @@ form {
         width: 400px;
     }
 }
+
+/* Responsive Contact Page */
 @media all and (max-width: 500px) {
     .intro-about {
         -webkit-box-orient: vertical;
@@ -633,14 +597,55 @@ form {
     svg {
         width: 80mm;
     }
-    .navigation-list .page-header_item:last-child {
+    .navigation-list {
         font-size: 12px;
         text-align: left;
+        padding: 0;
     }
     .btn-text {
         font-size: 10px;
     }
     button {
         font-size: 10px;
+    }
+    .more-links-hidden {
+        display: block;
+    }
+    .main-nav_index {
+        display: none;
+    }
+    header {
+        justify-content: center;
+    }
+    .col-6, .col-3 {
+        width: 100%;
+    }
+    .row {
+        width: fit-content;
+    }
+}
+
+@media all and (max-width: 800px) {
+    .container {
+        margin: inherit;
+    }
+    .col {
+        justify-content: center;
+    }
+    .card {  
+        margin-bottom: 10%;
+        width: max-content;
+    }
+    header {
+        display: block;
+    }
+    nav {
+        justify-content: center;
+    }
+}
+
+@media all and (min-width: 1000px) and (max-width: 1440px) {
+    .find-me-col {
+        width: 300px
     }
 }

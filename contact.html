@@ -8,7 +8,8 @@
     <title>Lade K | Web Dev</title>
     <link rel="icon" type="image/png" href="./img/favicon-32x32.png" sizes="32x32" />
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Crimson+Pro:wght@200&family=Encode+Sans:wght@500&family=IBM+Plex+Mono:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"> 
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous"> 
     <link rel="stylesheet" type="text/css" href="./css/style.production.css">
 </head>
 <body>
@@ -24,11 +25,12 @@
         </nav>
     </header>
     <h1 class="h1-contact">Contact</h1>
-    <div class="contact-body">
+    <!-- Form template - may use later -->
+    <!-- <div class="contact-body">
         <div class="contact-info">
             <div class="contact-p">
-                <!-- <a href="tel:1234567890">Tel: +1 (123) 456-7890</a><br> -->
-                <!-- <a href="skype:lekolawole">Skype: lekolawole</a><br> -->
+                <a href="tel:1234567890">Tel: +1 (123) 456-7890</a><br>
+                <a href="skype:lekolawole">Skype: lekolawole</a><br>
                 <a href="mailto:lekolawole@gmail.com">lekolawole@gmail.com</a>
             </div>
             <h2 class="h2-contact"><a href="mailto:lekolawole@gmail.com">Get in Touch</a></h2>
@@ -52,12 +54,45 @@
                     <input type="submit" value="Send Message" class="secondary_contact_submit">
             </div>
         </form>
+    </div> -->
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-6">
+                <div class="card text-center">
+                    <div class="card-header">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-info-circle-fill" viewBox="0 0 16 16">
+                        <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+                        </svg>
+                    </div>
+                    <div class="card-body">
+                        <div class="mb-3">
+                            <p class="contact-email">lekolawole@gmail.com</p>
+                        </div>
+                        <div class="contact-btn">
+                            <a type="submit" href="mailto:lekolawole@gmail.com" class="btn btn-dark">Get in Touch</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-3">
+                <div class="card text-center find-me-col">
+                    <div class="card-body">
+                        <div class="card-text">
+                            <p class="find-me">Find me on</p>
+                            <a class="git" href="https://github.com/lekolawole" target="_blank"><img src="./img/git.svg" alt="Git" width="50"></a>
+                            <a href="https://www.linkedin.com/in/ladek" target="_blank"><img src="./img/li.svg" alt="Linkedin" width="55"></a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            </div>
+            
+        </div>
     </div>
-    <footer>
-        <p class="find-me">Find me on</p>
-        <a class="git" href="https://github.com/lekolawole" target="_blank"><img src="./img/git.svg" alt="Git" width="50"></a>
-        <a href="https://www.linkedin.com/in/ladek" target="_blank"><img src="./img/li.svg" alt="Linkedin" width="55"></a>
-    </footer>
 <script src="./js/tota11y.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 </html>
