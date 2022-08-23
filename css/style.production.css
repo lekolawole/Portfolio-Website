@@ -139,7 +139,8 @@ button {
     font-size: 16px;
     font-family: inherit;
     border: none;
-    background-color: #dfd5c5;
+    /* background-color: #dfd5c5; */
+    background-color: #e0b354;
     padding: 10px;
     margin: 10px 10px 5px 10px;
     border-bottom: 2px solid rgba(0, 0, 0, 0.3);
@@ -458,6 +459,13 @@ circle {
     max-width: 300px;
 }
 
+.skills-card {
+    margin: 0 1.5rem;
+    background-color:#b2eee5;
+    box-shadow: #a9bac5 5px;
+    
+}
+
 /*///////////////CONTACT PAGE///////////////////////////*/
 .contact-body {
     display: -webkit-box;
@@ -594,7 +602,7 @@ ul {
         width: 150px;
         margin: 0 auto;
     }
-    svg {
+    .dc-vector {
         width: 80mm;
     }
     .navigation-list {
